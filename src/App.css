@@ -144,6 +144,27 @@ body {
   background: #222;
 }
 
+/* Mobile Menu Button */
+
+.menu-button {
+  display: none;
+
+  background: none;
+  border: none;
+
+  color: white;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
   .navbar {
@@ -152,6 +173,22 @@ body {
 
   .nav-links {
     display: none;
+  }
+
+  .hero {
+    padding: 120px 20px 60px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .mobile-menu a:hover {
+    background: #222;
   }
 
   .hero {
