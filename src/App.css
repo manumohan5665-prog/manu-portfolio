@@ -190,6 +190,29 @@ body {
   line-height: 1.5;
 }
 
+/* Skills */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.skill-card {
+  border: 1px solid #333;
+  background: #161616;
+  padding: 25px 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: #666;
+}
+
 /* Mobile Menu Button */
 
 .menu-button {
@@ -290,5 +313,11 @@ body {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  /* Skills */
+
+  .skills-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 }
