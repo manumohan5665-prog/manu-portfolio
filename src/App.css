@@ -30,6 +30,8 @@ body {
 /* Logo */
 
 .logo {
+  color: white;
+  text-decoration: none;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -74,9 +76,10 @@ body {
 }
 
 .hero h1 {
-  font-size: 70px;
+  font-size: clamp(45px, 8vw, 80px);
   margin: 0;
   line-height: 1.1;
+  letter-spacing: -2px;
 }
 
 .hero h2 {
@@ -125,6 +128,51 @@ body {
 
 .secondary-btn:hover {
   background: #222;
+}
+
+/* Hero Social Links */
+
+.hero-socials {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.hero-socials a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.hero-socials a:hover {
+  opacity: 1;
+}
+
+/* Scroll Indicator */
+
+.scroll-indicator {
+  margin-top: 60px;
+  font-size: 24px;
+  opacity: 0.4;
+  animation: scrollDown 2s infinite;
+}
+
+@keyframes scrollDown {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
 }
 
 /* Common Section */
@@ -528,11 +576,12 @@ body {
 
 .menu-button {
   display: none;
-  background: none;
+  background: transparent;
   border: none;
   color: white;
-  font-size: 28px;
+  font-size: 26px;
   cursor: pointer;
+  padding: 5px;
 }
 
 /* Mobile Menu */
@@ -568,6 +617,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #111;
+    border-top: 1px solid #333;
     padding: 20px 0;
   }
 
@@ -575,20 +625,17 @@ body {
     color: white;
     text-decoration: none;
     text-align: center;
-    padding: 15px;
-    font-size: 18px;
+    padding: 16px;
+    font-size: 17px;
+    transition: 0.3s;
   }
 
   .mobile-menu a:hover {
-    background: #222;
+    background: #1c1c1c;
   }
 
   .hero {
     padding: 120px 20px 60px;
-  }
-
-  .hero h1 {
-    font-size: 45px;
   }
 
   .hero h2 {
@@ -607,6 +654,14 @@ body {
 
   .btn {
     text-align: center;
+  }
+
+  .hero-socials {
+    margin-top: 20px;
+  }
+
+  .scroll-indicator {
+    margin-top: 40px;
   }
 
   /* About */

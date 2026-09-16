@@ -15,20 +15,53 @@ function Hero() {
             </h2>
 
             <p className="hero-description">
-                I build modern, responsive and user-friendly web applications
-                using modern web technologies.
+                I build responsive, user-friendly and modern web
+                applications using technologies like React,
+                JavaScript, Node.js and MongoDB.
             </p>
 
             <div className="hero-buttons">
 
-                <a href="#projects" className="btn primary-btn">
-                    View My Projects
+                <a
+                    href="#projects"
+                    className="btn primary-btn"
+                >
+                    View Projects
                 </a>
 
-                <a href="#contact" className="btn secondary-btn">
-                    Contact Me
+                <a
+                    href="/resume.pdf"
+                    className="btn secondary-btn"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Download Resume
                 </a>
 
+            </div>
+
+            <div className="hero-socials">
+
+                <a
+                    href="https://github.com/manumohan5665-prog"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://linkedin.com/in/manu-mohandas-dev"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+            </div>
+
+            <div className="scroll-indicator">
+                ↓
             </div>
 
         </section>
