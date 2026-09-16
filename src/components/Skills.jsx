@@ -1,19 +1,7 @@
-function Skills() {
-    const skills = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Bootstrap",
-        "Tailwind",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Git",
-        "GitHub",
-        "REST API"
-    ]
+import skills from "../data/skills"
 
+function Skills() {
+    
     return (
         <section className="skills section" id="skills">
 

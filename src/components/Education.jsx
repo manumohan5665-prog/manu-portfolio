@@ -1,14 +1,6 @@
-function Education() {
+import education from "../data/education"
 
-    const education = [
-        {
-            id: 1,
-            degree: "Bachelor of Computer Applications",
-            institution: "Girideepam Institute of Advanced Learning",
-            university: "Mahatma Gandhi University",
-            year: "2023"
-        }
-    ]
+function Education() {
 
     return (
         <section className="education section" id="education">
