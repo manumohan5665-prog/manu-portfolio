@@ -213,6 +213,67 @@ body {
   border-color: #666;
 }
 
+/* Experience */
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.experience-card {
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 30px;
+  background: #161616;
+  transition: 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  border-color: #666;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.experience-header h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.experience-company {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.6;
+}
+
+.experience-year {
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+.experience-location {
+  margin: 20px 0 10px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.experience-description {
+  max-width: 750px;
+  line-height: 1.7;
+  opacity: 0.7;
+  margin: 0;
+}
+
 /* Mobile Menu Button */
 
 .menu-button {
@@ -317,7 +378,26 @@ body {
   /* Skills */
 
   .skills-grid {
-  grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Experience */
+
+  .experience-card {
+  padding: 22px;
+}
+
+.experience-header {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience-header h3 {
+  font-size: 21px;
+}
+
+.experience-year {
+  align-self: flex-start;
 }
 
 }
